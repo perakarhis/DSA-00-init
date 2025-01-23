@@ -71,15 +71,16 @@ You probably want and need to **debug** the code to see, step by step, what is h
 
 ## Delivery
 
-Deliver the _fixed_ project to your private GitLab repository. This `00-init` submission does not influence your grade but
+Deliver the _fixed_ project to your private GitHub Classroom repository. This `00-init` submission does not influence your grade but
 it is good to test how things should be done and that the whole toolchain works before starting to work on the exercises that do affect your grade.
 
 Steps for the delivery are listed below. The steps assume you have cloned the project from Github Classroom.
 
-1. **Verify** your fixes work by executing the tests with Maven: `mvn test`. Or execute the tests from Visual Studio Code.
-1. **UPDATE THIS PART ONCE WORKFLOW IS CLEAR!!**
+1. **Verify** that your fixes work by executing the tests with Maven: `mvn test` or execute the tests from Visual Studio Code.
 1. **Commit** the changed files to the local git repository using command `git commit -am"Your commit message here"`. Use *meaningful* commit messages explaining what fixes or changes are you committing at this time!
 1. **Publish** the changes to your private remote GitLab repository using `git push`.
+   or
+1. From VSCode, go to **Source control** in the left panel (or *Ctrl+Shift+G*). Write a commit message, open the **droop-down menu of the Commit button**. Choose **Commit & Push**.
 1. **Verify** the changes are in the remote private repository of yours, by visiting it with your web browser and see the changes there.
 
 ## Issues or questions?
