@@ -6,13 +6,13 @@ The goals of this exercise are to:
 
 1. Check that your tools are installed properly and you can use them. List of tools and instructions on how to get started are provided in Moodle.
 1. Demonstrate how to run unit tests, since all course deliverables are unit tested.
-1. Provide you a learning experience on how to execute tests to find bugs, analyse them and fix them.
-1. Let you experiment how to deliver, using git, the fixed project for evaluation to your private remote repository.
+1. Provide you a learning experience on how to execute tests to find bugs, analyse them, and fix them.
+1. Learn how to use github classroom and to deliver your fixed project work.
 
 The unit tests are *important* throughout the course:
 
 1. You should unit test *all* your exercise tasks before submitting them for evaluation.
-1. Teachers use automated scripts to unit test your deliverables and decide on acceptance.
+1. Github classroom will test your code upon submissoins but teachers may still review your code to decide on acceptance.
 
 If unit tests fail, the exercise task will not pass. You will know this immediately when You yourself execute the tests on your computer.
 
@@ -25,7 +25,7 @@ The structure of the exercise is shown in the UML diagram below.
 
 ![UML class diagram of the exercise](classes.png)
 
-Now, about this exercise. You can do everything from terminal window (a.k.a. command prompt). Testing from Visual Studio Code is described below.
+Now, about this exercise. You can do everything from terminal window (a.k.a. command prompt). Testing from Visual Studio Code is described after the command prompt steps below.
 
 1. cd to the directory where this project `00-init` is (the `pom.xml` file of the project is there).
 1. Execute command `mvn test`.
@@ -62,32 +62,29 @@ These facts should point you where to start investigating the issue and start pl
 Alternatively, you can execute the tests from the Visual Studio Code. The tests are already set up for you so check only instructions related to running the tests in the [VS Code documentation site](https://code.visualstudio.com/docs/java/java-testing).
 
 1. Open the project in Visual Studio by opening the *folder* (a.k.a. directory) where the project (the `pom.xml` file) is located. Do *not* open individual .java files. Select File > Open... and select the *directory* `00-init`, opening the project.
-1. VS Code imports the project, creating a VS Code Java project. This may take for a while.
+1. VS Code imports the project, creating a VS Code Java project. This may take a while.
 1. Switch to the test view -- the symbol looking like a **lab bottle** in the left side of the VS Code window.
 
-Press the run tests button that appear beside the tests when you hover the mouse over the tests in the list. Run command is the "play" button appearing beside the test. Play button with a small bug symbol can be used to run the tests in Debug mode. Quite useful when trying to find out the root cause of the bugs by stepping through code with breakpoints.
+Press the run tests button that appear beside the tests when you hover the mouse over the tests in the list. Run command is the "play" button appearing beside the test. Play button with a small bug symbol can be used to run the tests in Debug mode. Quite useful when trying to find out the root cause of a bug by stepping through code with breakpoints.
 
 You probably want and need to **debug** the code to see, step by step, what is happening and what are the values in different variables. Use the VSC debugging feature to do that. Instructions for debugging can be found at the [VSC web pages](https://code.visualstudio.com/docs/java/java-debugging). Note that you need to debug in later exercises too. So better learn that now than later. Teachers will also show you how to debug in demonstrations and exercises.
 
 ## Delivery
 
 Deliver the _fixed_ project to your private GitLab repository. This `00-init` submission does not influence your grade but
-it is good to test how things should be done and that the whole toolchain works, before going to the exercises that do affect your grade.
+it is good to test how things should be done and that the whole toolchain works before starting to work on the exercises that do affect your grade.
 
 Steps for the delivery are listed below. The steps assume you have cloned the project from Github Classroom.
 
 1. **Verify** your fixes work by executing the tests with Maven: `mvn test`. Or execute the tests from Visual Studio Code.
-1. **Verify** the address of the remote repository you cloned the local project from: `git remote -v`.
-1. **View** changed files using command `git status`. With this exercise, you should have not created new files so there is no need to add new files to git.
-1. If necessary or interested, **view the changes** using command `git diff`.
-1. If tests pass and all seems to be ok, you are ready to commit and push.
+1. **UPDATE THIS PART ONCE WORKFLOW IS CLEAR!!**
 1. **Commit** the changed files to the local git repository using command `git commit -am"Your commit message here"`. Use *meaningful* commit messages explaining what fixes or changes are you committing at this time!
 1. **Publish** the changes to your private remote GitLab repository using `git push`.
 1. **Verify** the changes are in the remote private repository of yours, by visiting it with your web browser and see the changes there.
 
 ## Issues or questions?
 
-Ask in the lectures, exercises or online discussion groups.
+Ask in the lectures, exercises, or online discussion groups.
 
 ## About
 
